@@ -4,7 +4,7 @@ import ItemList from "./ItemList";
 
 const ItemListContainer = ({greeting}) => {
 
-    const productos = [{"id":1, "nombre":"Dante", "descripcion":"blablablalba","imagen":"eadsas"},{"id":2, "nombre":"Loris", "descripcion":"blablablalba","imagen":"eadsas"}];
+    const productos = [{"id":12, "nombre":"Dante", "descripcion":"blablablalba","imagen":"eadsas"},{"id":2, "nombre":"Loris", "descripcion":"blablablalba","imagen":"eadsas"}];
 
     const [items, setItems] = useState(productos);
 
