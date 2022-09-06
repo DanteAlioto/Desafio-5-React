@@ -5,17 +5,17 @@ import ItemList from "./ItemList";
 import ItemCount from "./ItemCount";
 
 
-const ItemListContainer = (greeting) => {
+const ItemListContainer = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
         const productos = [
-            {"id":1, "nombre":"Hamburguesa", "descripcion":"El sabor de la carne 100% vacuna más deliciosa, acompañado del pan más esponjoso, kétchup, mostaza y cebolla triturada.", "calorias":243, "imagen":"https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqXzqebG/200/200/original?country=ar", "precio":500},
-            {"id":2, "nombre":"Hamburguesa con Queso", "descripcion":"Carne 100% vacuna, queso derretido y mostaza, kétchup y cebolla triturada, es algo que nunca puede fallar. Un clásico que nunca pasa de moda.", "imagen":"https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqX8TYcp/200/200/original?country=ar", "calorias":289, "precio":600},
-            {"id":3, "nombre":"McFiesta", "descripcion":"Hamburguesa elaborada con carne 100% de carne vacuna, mayonesa, lechuga, tomate.", "calorias":295, "imagen":"https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqXakvb9/200/200/original?country=ar", "precio":700},
-            {"id":4, "nombre":"McDuo", "descripcion":"Una hamburguesa exquisita compuesta de dos carnes 100% vacuna, acompañadas del clásico pan, mostaza, kétchup, queso derretido, y un toque de cebolla que la hace única.", "calorias":303, "imagen":"https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXhzvVg/200/200/original?country=ar", "precio":800},
-            {"id":5, "nombre":"Triple Hamburguesa con Queso", "descripcion":"Tres medallones de carne 100% vacuna, queso derretido, mostaza, kétchup y cebolla triturada, es algo que nunca puede fallar.", "calorias":310, "imagen":"https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqXsCqnz/200/200/original?country=ar", "precio":900},
-            {"id":6, "nombre":"Big Mac", "descripcion":"Quizás sean las dos hamburguesas de carne 100% vacuna con esa salsa especial y queso derretido, el toque de cebolla y la frescura de la lechuga o el crocante del pepino, lo que la hace la hamburguesa más famosa del mundo. Un sabor único.", "calorias":505, "imagen":"https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqX3vl0y/200/200/original?country=ar", "precio":1000}
+            {"id":1, "nombre":"Iced Latte", "descripcion":"1", "calorias":243, "imagen":"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FIced%20Latte%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop&dpr=2", "precio":500},
+            {"id":2, "nombre":"Caramel Macchiato", "descripcion":"2", "imagen":"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FIced%20Caramel%20Macchiato%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop&dpr=2", "calorias":289, "precio":600},
+            {"id":3, "nombre":"Americano Helado", "descripcion":"3", "calorias":295, "imagen":"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FIced%20Americano%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop&dpr=2", "precio":700},
+            {"id":4, "nombre":"Mocha Helado", "descripcion":"4", "calorias":303, "imagen":"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FIced%20Mocha%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop&dpr=2", "precio":800},
+            {"id":5, "nombre":"Cappuccino Helado", "descripcion":"5", "calorias":310, "imagen":"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FIced%20Cappuccino%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop&dpr=2", "precio":900},
+            {"id":6, "nombre":"Sweet Vainilla Brew", "descripcion":"6", "calorias":505, "imagen":"https://djftrby1k8irl.cloudfront.net/s3fs-public/2022-03%2FCold%20Brew%20Vainilla%20Sweet%20Cream%20425x425%20sin%20fondo.png?auto=format,compress&q=70&crop=focalpoint&ar=1:1.0&w=180&fit=crop&dpr=2", "precio":1000}
         ];
 
         const getProductos = new Promise((resolve) => {
@@ -32,7 +32,7 @@ const ItemListContainer = (greeting) => {
 
     return(
         <div className="container">
-            <p>{greeting}, Tutora! </p>
+            <p>Hola Tutora! </p>
 
             <ItemList items = {items}/>
             <hr />

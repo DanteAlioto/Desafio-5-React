@@ -6,7 +6,7 @@ const CartWidget = () => {
 
     return(
         <div>
-            <a class="navbar-brand" href="index.html">{icon}</a>
+            <a className="navbar-brand" href="index.html">{icon}</a>
             <hr />
         </div>
     )
