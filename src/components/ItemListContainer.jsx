@@ -10,7 +10,7 @@ const ItemListContainer = ({greeting}) => {
 
 
 
-    /*useEffect(() => {
+    useEffect(() => {
 
         const promesa = async () =>{
             await new Promise((resolve,reject) => {
@@ -23,7 +23,7 @@ const ItemListContainer = ({greeting}) => {
         promesa.then((respuesta) => {
             setItems(respuesta);
         });
-    },[]);*/
+    },[]);
 
 
     return(
